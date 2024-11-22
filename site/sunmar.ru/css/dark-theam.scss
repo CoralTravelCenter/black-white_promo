@@ -1,0 +1,170 @@
+:root {
+	--сolor-Text-Light: #fff;
+	--light-grey: #929297;
+	--dark-grey: #232326;
+	--middle-grey: #dfdfe880;
+	--dark: #161618;
+}
+
+#header-column > div > div {
+	background: var(--dark);
+	border-bottom: 1px solid var(--light-grey);
+
+	+ div {
+		border-bottom: none;
+	}
+
+	.ant-space-item > * {
+		color: var(--сolor-Text-Light);
+	}
+
+	a {
+		color: var(--сolor-Text-Light);
+	}
+
+	a.header-logo > img {
+		filter: grayscale(1) brightness(5);
+	}
+
+	.v2-right-part a:has(svg) > svg path {
+		fill: var(--сolor-Text-Light);
+	}
+
+	.v2-right-part span:has(svg) > svg path {
+		stroke: var(--сolor-Text-Light);
+	}
+}
+
+div.menu + div .icon-wrapper {
+	border: 1px solid var(--light-grey);
+
+	svg {
+		stroke: var(--light-grey);
+
+		> * {
+			stroke: inherit;
+		}
+	}
+}
+
+button[name='sandwichMenu'] {
+	border: 1px solid var(--light-grey);
+
+	svg path {
+		stroke: var(--light-grey);
+	}
+
+	div {
+		color: var(--сolor-Text-Light) !important;
+	}
+
+	&:hover {
+		background: unset !important;
+		border: 1px solid var(--light-grey) !important;
+	}
+}
+
+.ant-menu-submenu-popup.ant-menu-submenu > ul {
+	background: var(--dark) !important;
+
+	.ant-menu-item {
+		svg path {
+			stroke: var(--light-grey);
+		}
+
+		a,
+		span {
+			color: var(--сolor-Text-Light) !important;
+		}
+	}
+
+	.ant-menu-item.ant-menu-item-selected {
+		background: unset !important;
+	}
+}
+
+.ant-modal-root .ant-modal-centered .ant-modal {
+	.ant-modal-content,
+	.ant-modal-header {
+		background: var(--dark);
+	}
+
+	.ant-modal-close {
+		background: var(--dark-grey);
+		svg {
+			fill: var(--light-grey);
+		}
+
+		&:hover {
+			svg path {
+				stroke: var(--light-grey);
+			}
+		}
+	}
+
+	.ant-modal-header > div {
+		color: var(--сolor-Text-Light);
+	}
+
+	.ant-modal-content {
+		.content-container .content {
+			> * {
+				color: var(--сolor-Text-Light);
+			}
+		}
+	}
+}
+
+#quick-search-tab-area {
+	background: var(--dark) !important;
+	.quick-search-wrapper {
+		background: var(--dark) !important;
+	}
+}
+
+.ant-tabs-nav-list {
+	span {
+		color: var(--сolor-Text-Light);
+	}
+
+	.ant-tabs-ink-bar {
+		background: var(--light-grey);
+	}
+}
+
+.ant-select-dropdown {
+	background-color: var(--dark);
+}
+
+.ant-checkbox-wrapper + span {
+	color: var(--сolor-Text-Light) !important;
+}
+
+.departure-select-list
+	.rc-virtual-list-holder-inner
+	.ant-select-item-option-selected {
+	background: var(--dark-grey) !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+	background: var(--dark-grey);
+	border-color: var(--сolor-Text-Light);
+}
+
+.ant-select .ant-select-selector {
+	border-color: var(--light-grey) !important;
+}
+
+[data-testid='QuickSearchPackageToursBlock'] {
+	.ant-select .ant-select-selector {
+		background: transparent !important;
+	}
+
+	.arrival-wrapper {
+		background: transparent !important;
+	}
+}
+
+.trigger-button-container {
+	background: transparent;
+}
