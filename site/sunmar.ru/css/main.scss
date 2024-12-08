@@ -67,7 +67,7 @@ section.kv > article .contenu {
 				line-height: 1 !important;
 				@media (max-width: 768px) {
 					margin-top: 0;
-					@include font(32px);
+								font-size: 2em !important;
 				}
 			}
 
@@ -104,6 +104,7 @@ section.kv > article .contenu {
 			cursor: pointer;
 			align-items: center;
 			justify-content: center;
+			z-index: 10;
 
 			@media (max-width: 768px) {
 				padding: 12px;

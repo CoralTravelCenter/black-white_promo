@@ -6,165 +6,537 @@
 	--dark: #161618;
 }
 
-#header-column > div > div {
-	background: var(--dark);
-	border-bottom: 1px solid var(--light-grey);
+body[white-monday="false"] {
 
-	+ div {
-		border-bottom: none;
-	}
+	#header-column > div > div {
+		background: var(--dark);
+		border-bottom: 1px solid var(--light-grey);
 
-	.ant-space-item > * {
-		color: var(--сolor-Text-Light);
-	}
+		+ div {
+			border-bottom: none;
+		}
 
-	a {
-		color: var(--сolor-Text-Light);
-	}
+		.ant-space-item > * {
+			color: var(--сolor-Text-Light);
+		}
 
-	a.header-logo > img {
-		filter: grayscale(1) brightness(5);
-	}
+		a {
+			color: var(--сolor-Text-Light);
+		}
 
-	.v2-right-part a:has(svg) > svg path {
-		fill: var(--сolor-Text-Light);
-	}
+		a.header-logo > img {
+			filter: grayscale(1) brightness(5);
+		}
 
-	.v2-right-part span:has(svg) > svg path {
-		stroke: var(--сolor-Text-Light);
-	}
-}
+		.v2-right-part a:has(svg) > svg path {
+			fill: var(--сolor-Text-Light);
+		}
 
-div.menu + div .icon-wrapper {
-	border: 1px solid var(--light-grey);
-
-	svg {
-		stroke: var(--light-grey);
-
-		> * {
-			stroke: inherit;
+		.v2-right-part span:has(svg) > svg path {
+			stroke: var(--сolor-Text-Light);
 		}
 	}
-}
 
-button[name='sandwichMenu'] {
-	border: 1px solid var(--light-grey);
-
-	svg path {
-		stroke: var(--light-grey);
+	.row-outer-container {
+		background: var(--dark) !important;
 	}
 
-	div {
-		color: var(--сolor-Text-Light) !important;
+	.basic-menu-item .submenu {
+		background: var(--dark);
+
+		.menu-item-label {
+			color: var(--сolor-Text-Light);
+		}
 	}
 
-	&:hover {
-		background: unset !important;
-		border: 1px solid var(--light-grey) !important;
+	.btn-child.sandwichMenu-child-wrapper {
+		color: var(--сolor-Text-Light);
 	}
-}
 
-.ant-menu-submenu-popup.ant-menu-submenu > ul {
-	background: var(--dark) !important;
+	div.menu + div .icon-wrapper {
+		border: 1px solid var(--light-grey);
 
-	.ant-menu-item {
+		svg {
+			fill: var(--light-grey);
+
+			> * {
+				fill: inherit;
+			}
+		}
+	}
+
+	.anticon:not(.option-icon) > svg {
+		fill: var(--light-grey);
+
+		> * {
+			fill: inherit;
+		}
+	}
+
+	button[name='sandwichMenu'] {
+		border: 1px solid var(--light-grey);
+
 		svg path {
 			stroke: var(--light-grey);
 		}
 
-		a,
-		span {
+		div {
 			color: var(--сolor-Text-Light) !important;
-		}
-	}
-
-	.ant-menu-item.ant-menu-item-selected {
-		background: unset !important;
-	}
-}
-
-.ant-modal-root .ant-modal-centered .ant-modal {
-	.ant-modal-content,
-	.ant-modal-header {
-		background: var(--dark);
-	}
-
-	.ant-modal-close {
-		background: var(--dark-grey);
-		svg {
-			fill: var(--light-grey);
 		}
 
 		&:hover {
+			background: unset !important;
+			border: 1px solid var(--light-grey) !important;
+		}
+	}
+
+	.ant-menu-submenu-popup.ant-menu-submenu > ul {
+		background: var(--dark) !important;
+
+		.ant-menu-item {
 			svg path {
 				stroke: var(--light-grey);
 			}
+
+			a,
+			span {
+				color: var(--сolor-Text-Light) !important;
+			}
+		}
+
+		.ant-menu-item.ant-menu-item-selected {
+			background: unset !important;
 		}
 	}
 
-	.ant-modal-header > div {
-		color: var(--сolor-Text-Light);
-	}
+	.ant-modal-root .ant-modal-centered .ant-modal {
+		.ant-modal-content,
+		.ant-modal-header {
+			background: var(--dark);
+		}
 
-	.ant-modal-content {
-		.content-container .content {
-			> * {
-				color: var(--сolor-Text-Light);
+		.ant-modal-close {
+			background: var(--dark-grey);
+			svg {
+				fill: var(--light-grey);
+			}
+
+			&:hover {
+				svg path {
+					stroke: var(--light-grey);
+				}
+			}
+		}
+
+		.ant-modal-header > div {
+			color: var(--сolor-Text-Light);
+		}
+
+		.ant-modal-content {
+			.content-container .content {
+				> * {
+					color: var(--сolor-Text-Light);
+				}
 			}
 		}
 	}
-}
 
-#quick-search-tab-area {
-	background: var(--dark) !important;
-	.quick-search-wrapper {
+	#quick-search-tab-area {
 		background: var(--dark) !important;
+		.quick-search-wrapper {
+			background: var(--dark) !important;
+		}
 	}
-}
 
-.ant-tabs-nav-list {
-	span {
+	.ant-tabs-nav-list {
+		span {
+			color: var(--сolor-Text-Light);
+		}
+
+		.ant-tabs-ink-bar {
+			background: var(--light-grey);
+		}
+	}
+
+	.ant-modal-body {
+		color: var(--сolor-Text-Light) !important;
+	}
+
+	.ant-select-dropdown {
+		background-color: var(--dark);
+	}
+
+	.ant-checkbox-wrapper + span {
+		color: var(--сolor-Text-Light) !important;
+	}
+
+	.departure-select-list
+	.rc-virtual-list-holder-inner
+		.ant-select-item-option-selected {
+		background: var(--dark-grey) !important;
+	}
+
+	.ant-checkbox-checked .ant-checkbox-inner {
+		background: var(--dark-grey);
+		border-color: var(--сolor-Text-Light);
+	}
+
+	.ant-select .ant-select-selector {
+		border-color: var(--light-grey) !important;
+	}
+
+	[data-testid='QuickSearchPackageToursBlock'] {
+		.ant-select .ant-select-selector {
+			background: transparent !important;
+		}
+
+		.arrival-wrapper {
+			background: transparent !important;
+		}
+	}
+
+	.trigger-button-container {
+		background: transparent;
+	}
+
+	[data-testid=QuickSearchPackageToursBlock] .arrival-wrapper {
+		border-color: var(--light-grey);
+	}
+
+	.ant-select-selection-placeholder {
+		color: var(--сolor-Text-Light) !important;
+	}
+
+	#QuickSearchPackageToursPassengerSelect {
+		.ant-btn {
+			background: transparent;
+			border-color: var(--light-grey);
+			color: var(--сolor-Text-Light);
+		}
+	}
+
+	#ArrivalLocationContainer {
+		span:not(.ant-select-selection-item-content) {
+			background: transparent;
+			//    border-color: var(--light-grey);
+			color: var(--сolor-Text-Light);
+		}
+	}
+
+	:where(.css-rw1nb).ant-input-outlined {
+		border-color: var(--light-grey);
+	}
+
+	.ant-popover .ant-popover-arrow {
+		&:after, &::before {
+			background: var(--dark-grey);
+		}
+	}
+
+	.ant-popover-content .ant-popover-inner {
+		background: var(--dark-grey);
+
+		.ant-popover-inner-content {
+			color: var(--сolor-Text-Light);
+		}
+
+		button {
+			background: transparent;
+			border-color: var(--light-grey);
+			color: var(--сolor-Text-Light);
+		}
+	}
+
+	#QuickSearchPackageToursMultiDatePicker {
+		.ant-input-affix-wrapper {
+			background: transparent !important;
+			border-color: var(--light-grey);
+		}
+	}
+
+	.ant-picker-dropdown .ant-picker-panel-container {
+		color: var(--сolor-Text-Light);
+		background: var(--dark-grey);
+
+		.dateTagContainer .ant-gag{
+			background: var(--dark-grey);
+			border: 1px solid rgba(0, 0, 0, 0.06);
+			}
+
+			.ant-picker-header-view button {
+				color: var(--сolor-Text-Light);
+			}
+
+			.picker-panel {
+				table tr th{
+					color: var(--сolor-Text-Light);
+					}
+			}
+
+			.ant-radio-wrapper span + span {
+				color: var(--сolor-Text-Light);
+			}
+	}
+
+	.ant-select-item.ant-select-item-option:not(.ant-select-item-option-active) {
 		color: var(--сolor-Text-Light);
 	}
 
-	.ant-tabs-ink-bar {
-		background: var(--light-grey);
-	}
-}
+	div > div:has(.cookie-agreement-content) {
+		background: var(--dark-grey);
 
-.ant-select-dropdown {
-	background-color: var(--dark);
-}
-
-.ant-checkbox-wrapper + span {
-	color: var(--сolor-Text-Light) !important;
-}
-
-.departure-select-list
-	.rc-virtual-list-holder-inner
-	.ant-select-item-option-selected {
-	background: var(--dark-grey) !important;
-}
-
-.ant-checkbox-checked .ant-checkbox-inner {
-	background: var(--dark-grey);
-	border-color: var(--сolor-Text-Light);
-}
-
-.ant-select .ant-select-selector {
-	border-color: var(--light-grey) !important;
-}
-
-[data-testid='QuickSearchPackageToursBlock'] {
-	.ant-select .ant-select-selector {
-		background: transparent !important;
 	}
 
-	.arrival-wrapper {
-		background: transparent !important;
-	}
-}
+	.cookie-agreement-content p {
+		color: var(--сolor-Text-Light) !important;
 
-.trigger-button-container {
-	background: transparent;
+		a {
+			color: inherit;
+		}
+	}
+
+	.departure-city-modal-container div:not(.eRXwQU){
+		a span {
+			color: var(--сolor-Text-Light) !important;
+		}
+		}
+
+		:where(.css-rw1nb).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+			color: var(--сolor-Text-Light);
+		}
+
+		:where(.css-rw1nb).ant-tabs {
+			color: var(--сolor-Text-Light);
+		}
+
+		:where(.css-rw1nb).ant-form-item .ant-form-item-label >label {
+			color: var(--сolor-Text-Light);
+		}
+
+		:where(.css-rw1nb).ant-tabs .ant-tabs-tab {
+			color: var(--сolor-Text-Light);
+
+			&:hover {
+				color: unset;
+			}
+		}
+
+		#remember {
+			a {
+				color: var(--сolor-Text-Light);
+			}
+		}
+
+		.tooltip-container > span {
+			color: var(--сolor-Text-Light);
+		}
+
+		.tooltip-container > span a{
+			color: var(--сolor-Text-Light);
+			}
+
+			.loginRedirectButton-child-wrapper {
+				color: var(--сolor-Text-Light);
+			}
+
+			.iMiflV .content .name {
+				color: var(--сolor-Text-Light);
+			}
+
+			.fvSCzD .breadcrumb-link, .breadcrumb-separator {
+				color: var(--сolor-Text-Light);
+			}
+
+			:where(.css-rw1nb).ant-input-affix-wrapper >input.ant-input {
+				color: var(--сolor-Text-Light);
+			}
+
+			.eLzlRI .ant-picker-date-panel .ant-picker-content .ant-picker-cell.ant-picker-cell-disabled > div, .eLzlRI .ant-picker-month-panel .ant-picker-content .ant-picker-cell.ant-picker-cell-disabled > div{
+				background: transparent !important;
+				color: var(--сolor-Text-Light) !important;
+				}
+
+				.eLzlRI .ant-picker-date-panel .ant-picker-content .ant-picker-cell:not(.ant-picker-cell-in-view) > div, .eLzlRI .ant-picker-month-panel .ant-picker-content .ant-picker-cell:not(.ant-picker-cell-in-view) > div {
+					background: transparent !important;
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				.dateTagContainer span {
+					background: var(--dark) !important;
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				#popover-content div {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				:where(.css-rw1nb).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+					background: transparent !important;
+				}
+
+				#QuickSearchOnlyHotelArrivalLocation {
+					border: 1px solid var(--сolor-Text-Light);
+				}
+
+				:where(.css-rw1nb).ant-input-outlined {
+					background: transparent !important;
+					border: 1px solid var(--сolor-Text-Light);
+				}
+
+				:where(.css-rw1nb).ant-btn-default {
+					background: transparent !important;
+					border: 1px solid var(--сolor-Text-Light);
+				}
+
+				:where(.css-rw1nb).ant-input {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				#footer-column section > div {
+					background: var(--dark);
+				}
+
+				.cQNXZI .menu-heading {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				.cQNXZI ul li a {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				.eTNfuZ div span {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				.bnOhHW > * {
+					color: var(--сolor-Text-Light) !important;
+				}
+
+				@media (max-width: 768px) {
+					#header-column > div > div {
+						border: none;
+					}
+
+					.sc-f203a167-0.jVrSIU.sc-afd426c8-0.dTqomu.left > span > svg {
+						fill: none;
+					}
+
+					.hZksUD .info-group .from-to {
+						color: var(--сolor-Text-Light) !important;
+					}
+
+					.sc-3e0d3847-1.cvhhPo.basic-button-container.btn-edit span svg path{
+						fill: var(--сolor-Text-Light);
+						}
+
+						.mobile-hambuerger-menu-conainer {
+							background: var(--dark-grey);
+						}
+
+						.gUJlXH {
+							color: var(--сolor-Text-Light) !important;
+
+							.icon-wrapper svg path {
+								fill: var(--сolor-Text-Light);
+							}
+						}
+
+						.muqAN .title {
+							color: var(--сolor-Text-Light) !important;
+						}
+
+						.koWual .number-section .phone {
+							color: var(--сolor-Text-Light) !important;
+						}
+
+						.gFUGrl .ant-modal-content {
+							border-radius: 0;
+						}
+
+						.dODsZq a .text {
+							color: var(--сolor-Text-Light) !important;
+						}
+
+						.dxulTB .ant-modal-content .ant-modal-footer {
+							background: var(--dark-grey);
+						}
+
+
+						:where(.css-rw1nb).ant-select-single .ant-select-selector {
+							color: var(--сolor-Text-Light);
+						}
+
+						.hUKGPJ .menu-heading {
+							color: var(--сolor-Text-Light);
+						}
+
+						.hUKGPJ ul li a {
+							color: var(--сolor-Text-Light);
+						}
+
+						.iKPuKc span, .iKPuKc a {
+							color: var(--сolor-Text-Light);
+						}
+
+						.dxulTB .ant-modal-content .ant-modal-body .ant-tabs {
+							background: transparent;
+						}
+
+						.FxVqo .ant-picker-date-panel .ant-picker-content .ant-picker-cell.ant-picker-cell-disabled > div {
+							background: transparent !important;
+						  color: var(--сolor-Text-Light) !important;
+						}
+
+						:where(.css-rw1nb).ant-btn {
+							color: var(--сolor-Text-Light) !important;
+						}
+
+						.FxVqo .ant-picker-date-panel .ant-picker-content .ant-picker-cell:not(.ant-picker-cell-in-view) > div {
+							background: var(--dark);
+							color: var(--сolor-Text-Light) !important;
+						}
+
+						.cwazRg {
+							background: transparent !important;
+						}
+				}
+
+
+				.partner-logo a {
+					width: 150px;
+					height: 42px;
+					display: block;
+
+					img {
+						display: none;
+					}
+				}
+
+				.partner-logo:nth-child(1) a {
+					background-image: url("https://b2ccdn.sunmar.ru/content/atr-logo.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+
+				.partner-logo:nth-child(2) a {
+					background-image: url("https://b2ccdn.sunmar.ru/content/gkp-logo.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+
+				.partner-logo:nth-child(3) a {
+					background-image: url("https://b2ccdn.sunmar.ru/content/iata-logo.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+
+				.partner-logo:nth-child(4) a {
+					background-image: url("https://b2ccdn.sunmar.ru/content/rst-logo.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+
+				.sm-custom-subscribe {
+					color: var(--сolor-Text-Light);
+				}
 }
